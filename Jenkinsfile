@@ -12,18 +12,9 @@ pipeline {
                     echo 'success building and archiving now'
                     archiveArtificats artifacts: '**/target/*.war'
             }
-            
+            } 
         }
     }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
+       
+
 }
